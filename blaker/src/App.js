@@ -4,12 +4,12 @@ import './App.css';
 
 function App() {
   var name = 'Start Blakeing Now';
-  function doSomething(){
+  doSomething = () => {
     name ='The Blakening has begun'
   }
   return (
     <div className="App">
-      <Button color='info' onClick={doSomething()}>
+      <Button color='info' onClick={this.doSomething()}>
         {name}
       </Button>
     </div>
